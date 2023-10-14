@@ -47,6 +47,8 @@ output reg					o_one_sec_tick;
 				r_counter <= r_counter + 1'b1;
 				o_one_sec_tick <= 1'b0;
 			end
-	    end
+		end else begin
+			o_one_sec_tick <= 1'b0;
+		end
 	end
 endmodule
